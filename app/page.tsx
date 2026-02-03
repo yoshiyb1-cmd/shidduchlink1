@@ -35,7 +35,7 @@ export default function Home() {
         </div>
 
         <div className="ctaRow">
-          <Link className="cardBtn cardBtnDark" href="/single">
+          <Link className="cardBtn" href="/single">
             <div className="cardTitle">For Singles</div>
             <div className="cardSub">Browse with filters or guided discovery</div>
             <div className="cardAction">
