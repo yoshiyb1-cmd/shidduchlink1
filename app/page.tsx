@@ -3,55 +3,64 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="wrap">
-      {/* Top navigation */}
       <header className="top">
         <div className="brand">
-          <div className="mark" />
+          <div className="mark">SL</div>
           <div>
             <div className="brandName">ShidduchLink</div>
-            <div className="brandTag">Marriage-focused matchmaking</div>
+            <div className="brandTag">Private matchmaking, built with modesty</div>
           </div>
         </div>
 
-        <nav className="topPills">
-          <Link href="#" className="pill">Sign in</Link>
-        </nav>
+        <div className="topRight">
+          <span className="pill">Cream • Premium • Modest</span>
+          <Link className="signin" href="/signin">Sign in</Link>
+        </div>
       </header>
 
-      {/* Hero */}
       <section className="heroCard">
-        <h1 className="heroTitle">
-          TEST HOMEPAGE CHANGE.
-        </h1>
+        <h1 className="heroTitle">A refined, privacy-first shidduch platform.</h1>
 
         <p className="heroSub">
           ShidduchLink is built for serious singles (28–40), professional matchmakers,
-          and family advocates. A respectful, marriage-only environment designed to
-          support intentional matches — without the noise of modern dating apps.
+          and family advocates. A respectful environment designed to support intentional
+          connections — without the noise of modern dating apps.
         </p>
 
-        <div className="ctaRow">
-          <Link className="cta primary" href="/single">
-            For Singles
-            <span className="ctaHint">Browse with filters or guided discovery</span>
-          </Link>
-
-          <Link className="cta" href="/matchmaker">
-            For Matchmakers
-            <span className="ctaHint">Manage rosters, resumes, and referrals</span>
-          </Link>
-
-          <Link className="cta" href="/advocate">
-            For Parents & Siblings
-            <span className="ctaHint">Advocate and connect through matchmakers</span>
-          </Link>
+        {/* NOTE: removed “Marriage-only” and “Male/Female” bullets */}
+        <div className="subRow">
+          <span>Privacy-first</span>
+          <span className="dot">Mutual match required to connect</span>
+          <span className="dot">Matchmaker-led access available</span>
         </div>
 
-        <div className="miniRow">
-          <span className="mini">Marriage-only</span>
-          <span className="mini">Male / Female</span>
-          <span className="mini">Mutual match required to connect</span>
-          <span className="mini">Matchmaker-led access available</span>
+        <div className="ctaRow">
+          <Link className="cardBtn cardBtnDark" href="/single">
+            <div className="cardTitle">For Singles</div>
+            <div className="cardSub">Browse with filters or guided discovery</div>
+            <div className="cardAction">
+              <span className="actionPill">For Singles</span>
+              <span className="arrow">›</span>
+            </div>
+          </Link>
+
+          <Link className="cardBtn" href="/matchmaker">
+            <div className="cardTitle">For Matchmakers</div>
+            <div className="cardSub">Manage rosters, resumes, and referrals</div>
+            <div className="cardAction">
+              <span className="actionPill">For Matchmakers</span>
+              <span className="arrow">›</span>
+            </div>
+          </Link>
+
+          <Link className="cardBtn" href="/advocate">
+            <div className="cardTitle">For Parents &amp; Siblings</div>
+            <div className="cardSub">Advocate and connect through matchmakers</div>
+            <div className="cardAction">
+              <span className="actionPill">For Parents &amp; Siblings</span>
+              <span className="arrow">›</span>
+            </div>
+          </Link>
         </div>
       </section>
     </main>
