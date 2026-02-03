@@ -21,7 +21,7 @@ export default function Home() {
       {/* Hero */}
       <section className="heroCard">
         <h1 className="heroTitle">
-          A refined, privacy-first shidduch platform.
+          TEST HOMEPAGE CHANGE.
         </h1>
 
         <p className="heroSub">
