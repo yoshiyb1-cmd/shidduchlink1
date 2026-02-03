@@ -7,9 +7,9 @@ const serif = Cormorant_Garamond({
   variable: '--font-serif'
 });
 
-
 const sans = Inter({
   subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
   variable: '--font-sans'
 });
 
